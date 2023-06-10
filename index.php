@@ -32,9 +32,13 @@
         <label>Password</label>
 
         <input type="password" name="password" placeholder="Password"><br> 
-
+        <input type="checkbox" checked="checked"> Remember me
         <button type="submit">Login</button>
-
+        <label>OR</label> 
+            <br>
+            <button type="button"><a href="signup.html">SignUp</a></button> 
+            <br><br>  
+            <a href="forgotpassword.html">Forgot password? </a>
      </form>
 
 </body>
