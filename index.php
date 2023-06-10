@@ -4,16 +4,19 @@
 
 <head>
 
-    <title>LOGIN</title>
+    <title>HarvestHQ</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo-no-background.png"/>
 
 </head>
 
 <body>
 
      <form action="login.php" method="post">
-
+     <div class="header__logo">
+                    <img src="logo-no-background.png" width=200px height= auto alt="Logo">
+                </div>
         <h2>LOGIN</h2>
 
         <?php if (isset($_GET['error'])) { ?>
