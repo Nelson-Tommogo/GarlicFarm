@@ -17,7 +17,7 @@
      <div class="header__logo">
                     <img src="logo-no-background.png" width=200px height= auto alt="Logo">
                 </div>
-        <h2>LOGIN</h2>
+        <h2>Reset Password</h2>
 
         <?php if (isset($_GET['error'])) { ?>
 
@@ -28,14 +28,16 @@
         <label>User Name</label>
 
         <input type="text" name="uname" placeholder="User Name"><br>
-        <label>Password</label>
+
+        <label>Old Password</label>
+        <input type="password" name="password" placeholder="Password"><br> 
+        <label>New Password</label>
         <input type="password" name="password" placeholder="Password"><br> 
         <input type="checkbox" onclick="showPassword()"><span class="checkbox-label">Show Password</span><br>
-        <button type="submit">Login</button>
+        <button type="submit">Update</button>
 
         <div class="form-links">
-        <a href="signup.php">Sign Up</a>
-        <a href="forgetpass.php">Forgot Password?</a>
+        <a href="signup.php">Sign Up</a> | <a href="index.php">Login</a>
     </div>
      </form>
      <style>
