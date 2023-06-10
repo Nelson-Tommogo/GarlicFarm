@@ -95,3 +95,17 @@ a:hover{
     opacity: .7;
     color: #0c0101;
 }
+.form-links {
+    text-align: center;
+    /* margin-top: 5px; */
+}
+
+.form-links a {
+    text-decoration: none;
+    color: blue;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    margin-left: 35px;
+}

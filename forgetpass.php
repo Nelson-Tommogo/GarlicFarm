@@ -33,30 +33,12 @@
         <input type="password" name="password" placeholder="Password"><br> 
         <label>New Password</label>
         <input type="password" name="password" placeholder="Password"><br> 
-        <input type="checkbox" onclick="showPassword()"><span class="checkbox-label">Show Password</span><br>
-        <button type="submit">Update</button>
-
+        <input type="checkbox" onclick="showPassword()"><span class="checkbox-label"></span>
+            <button type="submit">Update</button>
         <div class="form-links">
         <a href="signup.php">Sign Up</a> | <a href="index.php">Login</a>
     </div>
      </form>
-     <style>
-    .form-links {
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    .form-links a {
-        text-decoration: none;
-        color: blue;
-    }
-
-    .checkbox-label {
-        font-size: 14px;
-        margin-left: 5px;
-    }
-</style>
-
 <script>
     function showPassword() {
         var passwordInput = document.querySelector('input[name="password"]');

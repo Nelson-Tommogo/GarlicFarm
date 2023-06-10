@@ -2,7 +2,7 @@
 $host = "localhost"; // Database host
 $username = "root"; // Database username
 $password = "genius"; // Database password
-$database = "your_database"; // Database name
+$database = "HarvestHQ"; // Database name
 
 // Create a connection
 $conn = new mysqli($host, $username, $password, $database);
