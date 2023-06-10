@@ -30,17 +30,41 @@
         <input type="text" name="uname" placeholder="User Name"><br>
 
         <label>Password</label>
-
         <input type="password" name="password" placeholder="Password"><br> 
-        <input type="checkbox" checked="checked"> Remember me
+        <input type="checkbox" onclick="showPassword()"><span class="checkbox-label">Show Password</span><br>
         <button type="submit">Login</button>
-        <label>OR</label> 
-            <br>
-            <button type="button"><a href="signup.html">SignUp</a></button> 
-            <br><br>  
-            <a href="forgotpassword.html">Forgot password? </a>
-     </form>
 
+        <div class="form-links">
+        <a href="signup.php">Sign Up</a> | <a href="forgotpassword.php">Forgot Password?</a>
+    </div>
+     </form>
+     <style>
+    .form-links {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .form-links a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    .checkbox-label {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+</style>
+
+<script>
+    function showPassword() {
+        var passwordInput = document.querySelector('input[name="password"]');
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
 </body>
 
 </html>

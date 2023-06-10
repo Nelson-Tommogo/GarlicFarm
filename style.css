@@ -81,7 +81,7 @@ h1 {
     color: rgb(134, 3, 3);
 }
 a {
-    float: right;
+    /* float: right; */
     background: rgb(183, 225, 233);
     padding: 10px 15px;
     color: #fff;
