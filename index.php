@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
+    // Check for connection errors
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -23,10 +24,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($conn->query($sql) === TRUE) {
         echo "Sign-up successful!";
         // Redirect to the login page after successful sign-up
-        header("Location: login.php");
+        header("Location: index.php");
         exit;
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+} else {
+    // Test connection to MySQL
+    $host = 'localhost';
+    $dbUsername = 'root';
+    $dbPassword = 'genius';
+    $dbName = 'HarvestHQ';
+
+    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+
+    // Check for connection errors
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } else {
+        echo "Connected to MySQL successfully!";
     }
 
     $conn->close();
